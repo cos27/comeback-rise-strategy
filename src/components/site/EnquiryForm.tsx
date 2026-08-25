@@ -14,7 +14,7 @@ const situations = [
 ];
 
 const supportAreas = [
-  "Resume Review",
+  "Resume Writing",
   "LinkedIn Optimization",
   "Interview Preparation",
   "AI Career Guidance",

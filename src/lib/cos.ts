@@ -1,17 +1,13 @@
 // COS site configuration.
-// Add your WhatsApp business number in international format, digits only
-// (e.g. "919812345678"). While empty, WhatsApp buttons scroll to the enquiry form.
-export const WHATSAPP_NUMBER = "";
+// WhatsApp community group invite link.
+export const WHATSAPP_COMMUNITY_URL =
+  "https://chat.whatsapp.com/E6SeDTFMlO41Vc2iMVYCKi?s=cl&p=a&mlu=4";
 
-export const WHATSAPP_MESSAGE =
-  "Hi COS! I'd like to talk about restarting my career.";
-
-export function whatsappHref(): string | null {
-  if (!WHATSAPP_NUMBER) return null;
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+export function whatsappHref(): string {
+  return WHATSAPP_COMMUNITY_URL;
 }
 
-export const LINKEDIN_URL = "https://www.linkedin.com/";
+export const LINKEDIN_URL = "https://www.linkedin.com/company/comeback-operating-system/";
 
 export const NAV_LINKS = [
   { label: "Home", href: "#home" },

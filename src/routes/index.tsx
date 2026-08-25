@@ -104,8 +104,8 @@ const method = [
 const services = [
   {
     icon: FileText,
-    title: "Resume Review",
-    text: "Strengthen and reposition your resume after a career break.",
+    title: "Resume Writing",
+    text: "Craft and reposition your resume after a career break.",
   },
   {
     icon: Linkedin,
@@ -217,8 +217,13 @@ function Home() {
                 Your Career Break Doesn&rsquo;t Define Your Career. Your Comeback Does.
               </h1>
               <p className="mt-6 max-w-xl text-base text-muted-foreground sm:text-lg">
-                Helping women restart their careers with confidence, practical career strategy and
-                AI-powered guidance.
+                Comeback Operating System&trade; (COS) combines human career guidance with
+                AI-powered tools to help women Restart, Rebuild &amp; Rise after a career break.
+              </p>
+              <p className="mt-4 max-w-xl text-base text-muted-foreground sm:text-lg">
+                From career clarity and confidence to AI readiness, professional branding, job
+                search and interview preparation, COS provides a structured path to a confident
+                career comeback.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Button asChild variant="hero" size="xl">
@@ -340,7 +345,7 @@ function Home() {
           <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
             <div className="max-w-3xl">
               <span className="inline-flex items-center rounded-full border border-gold/50 bg-gold-soft/40 px-3 py-1 text-xs font-medium tracking-[0.16em] text-primary uppercase">
-                Coming Soon
+                Flagship Program
               </span>
               <h2 className="mt-5 text-3xl font-semibold text-primary sm:text-4xl">
                 COS Returnship Program&trade;
@@ -364,7 +369,7 @@ function Home() {
 
             <div className="mt-10">
               <Button asChild variant="gold" size="xl">
-                <a href="#contact">Join the Waitlist</a>
+                <a href="#contact">Start Your Comeback</a>
               </Button>
             </div>
           </div>
@@ -434,17 +439,6 @@ function Home() {
           </div>
         </section>
 
-        {/* SOCIAL PROOF */}
-        <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
-          <div className="surface-card px-6 py-14 text-center">
-            <p className="eyebrow">Social proof</p>
-            <h2 className="mt-4 text-3xl font-semibold text-primary sm:text-4xl">
-              Real Comebacks. Real Stories.
-            </h2>
-            <p className="mt-4 text-muted-foreground">Client stories coming soon.</p>
-          </div>
-        </section>
-
         {/* RESOURCES */}
         <section id="resources" className="border-y border-border bg-secondary/40">
           <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
@@ -454,14 +448,13 @@ function Home() {
                 Career Comeback Resources
               </h2>
               <p className="mt-4 text-muted-foreground">
-                Coming soon &mdash; practical resources to help you restart, rebuild and rise.
+                Practical resources to help you restart, rebuild and rise.
               </p>
             </div>
             <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {resourceCategories.map((c) => (
                 <li key={c} className="surface-card p-6">
                   <h3 className="text-lg font-semibold text-primary">{c}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">Coming soon</p>
                 </li>
               ))}
             </ul>
@@ -504,13 +497,13 @@ function Home() {
               </div>
 
               <div className="surface-card mt-10 p-6">
-                <p className="eyebrow">Coming Soon</p>
+                <p className="eyebrow">Community</p>
                 <h3 className="mt-3 text-xl font-semibold text-primary">
                   COS Career Comeback Community
                 </h3>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  A future space for women to connect, learn, grow and navigate their career
-                  comeback together.
+                  A space for women to connect, learn, grow and navigate their career comeback
+                  together.
                 </p>
               </div>
             </div>
