@@ -14,9 +14,9 @@ export function WhatsAppCta({
   variant = "outlinePlum",
   size = "xl",
   className,
-  label = "Chat with COS on WhatsApp",
+  label = "Join the Community",
 }: Props) {
-  const href = whatsappHref() ?? "#contact";
+  const href = whatsappHref();
   const external = href.startsWith("http");
 
   return (
