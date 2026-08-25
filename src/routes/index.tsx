@@ -369,7 +369,7 @@ function Home() {
 
             <div className="mt-10">
               <Button asChild variant="gold" size="xl">
-                <a href="#contact">Join the Waitlist</a>
+                <a href="#contact">Start Your Comeback</a>
               </Button>
             </div>
           </div>
