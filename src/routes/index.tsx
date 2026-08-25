@@ -526,7 +526,7 @@ function Home() {
               <Button asChild variant="gold" size="xl">
                 <a href="#contact">Start Your Comeback</a>
               </Button>
-              <WhatsAppCta variant="outlineLight" />
+              <WhatsAppCta variant="outlineLight" label="Free Discovery Call" />
             </div>
           </div>
         </section>
