@@ -104,8 +104,8 @@ const method = [
 const services = [
   {
     icon: FileText,
-    title: "Resume Review",
-    text: "Strengthen and reposition your resume after a career break.",
+    title: "Resume Writing",
+    text: "Craft and reposition your resume after a career break.",
   },
   {
     icon: Linkedin,
