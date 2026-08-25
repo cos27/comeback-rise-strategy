@@ -345,7 +345,7 @@ function Home() {
           <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
             <div className="max-w-3xl">
               <span className="inline-flex items-center rounded-full border border-gold/50 bg-gold-soft/40 px-3 py-1 text-xs font-medium tracking-[0.16em] text-primary uppercase">
-                Coming Soon
+                Flagship Program
               </span>
               <h2 className="mt-5 text-3xl font-semibold text-primary sm:text-4xl">
                 COS Returnship Program&trade;
