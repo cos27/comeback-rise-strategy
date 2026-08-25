@@ -509,13 +509,13 @@ function Home() {
               </div>
 
               <div className="surface-card mt-10 p-6">
-                <p className="eyebrow">Coming Soon</p>
+                <p className="eyebrow">Community</p>
                 <h3 className="mt-3 text-xl font-semibold text-primary">
                   COS Career Comeback Community
                 </h3>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  A future space for women to connect, learn, grow and navigate their career
-                  comeback together.
+                  A space for women to connect, learn, grow and navigate their career comeback
+                  together.
                 </p>
               </div>
             </div>
