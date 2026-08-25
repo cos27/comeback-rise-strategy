@@ -439,17 +439,6 @@ function Home() {
           </div>
         </section>
 
-        {/* SOCIAL PROOF */}
-        <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
-          <div className="surface-card px-6 py-14 text-center">
-            <p className="eyebrow">Social proof</p>
-            <h2 className="mt-4 text-3xl font-semibold text-primary sm:text-4xl">
-              Real Comebacks. Real Stories.
-            </h2>
-            <p className="mt-4 text-muted-foreground">Client stories coming soon.</p>
-          </div>
-        </section>
-
         {/* RESOURCES */}
         <section id="resources" className="border-y border-border bg-secondary/40">
           <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
@@ -459,14 +448,13 @@ function Home() {
                 Career Comeback Resources
               </h2>
               <p className="mt-4 text-muted-foreground">
-                Coming soon &mdash; practical resources to help you restart, rebuild and rise.
+                Practical resources to help you restart, rebuild and rise.
               </p>
             </div>
             <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {resourceCategories.map((c) => (
                 <li key={c} className="surface-card p-6">
                   <h3 className="text-lg font-semibold text-primary">{c}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">Coming soon</p>
                 </li>
               ))}
             </ul>
