@@ -217,8 +217,13 @@ function Home() {
                 Your Career Break Doesn&rsquo;t Define Your Career. Your Comeback Does.
               </h1>
               <p className="mt-6 max-w-xl text-base text-muted-foreground sm:text-lg">
-                Helping women restart their careers with confidence, practical career strategy and
-                AI-powered guidance.
+                Comeback Operating System&trade; (COS) combines human career guidance with
+                AI-powered tools to help women Restart, Rebuild &amp; Rise after a career break.
+              </p>
+              <p className="mt-4 max-w-xl text-base text-muted-foreground sm:text-lg">
+                From career clarity and confidence to AI readiness, professional branding, job
+                search and interview preparation, COS provides a structured path to a confident
+                career comeback.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Button asChild variant="hero" size="xl">
