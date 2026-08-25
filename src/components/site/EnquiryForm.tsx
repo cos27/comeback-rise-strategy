@@ -97,7 +97,7 @@ export function EnquiryForm() {
             Full Name
           </label>
           <input id="name" name="name" className={fieldClass} maxLength={100} autoComplete="name" />
-          {errors.name && <p className="mt-1.5 text-xs text-destructive">{errors.name}</p>}
+          {errors['name'] && <p className="mt-1.5 text-xs text-destructive">{errors['name']}</p>}
         </div>
         <div>
           <label htmlFor="email" className="mb-2 block text-sm font-medium">
@@ -111,7 +111,7 @@ export function EnquiryForm() {
             maxLength={255}
             autoComplete="email"
           />
-          {errors.email && <p className="mt-1.5 text-xs text-destructive">{errors.email}</p>}
+          {errors['email'] && <p className="mt-1.5 text-xs text-destructive">{errors['email']}</p>}
         </div>
       </div>
 
@@ -128,7 +128,7 @@ export function EnquiryForm() {
             maxLength={20}
             autoComplete="tel"
           />
-          {errors.whatsapp && <p className="mt-1.5 text-xs text-destructive">{errors.whatsapp}</p>}
+          {errors['whatsapp'] && <p className="mt-1.5 text-xs text-destructive">{errors['whatsapp']}</p>}
         </div>
         <div>
           <label htmlFor="situation" className="mb-2 block text-sm font-medium">
@@ -144,8 +144,8 @@ export function EnquiryForm() {
               </option>
             ))}
           </select>
-          {errors.situation && (
-            <p className="mt-1.5 text-xs text-destructive">{errors.situation}</p>
+          {errors['situation'] && (
+            <p className="mt-1.5 text-xs text-destructive">{errors['situation']}</p>
           )}
         </div>
       </div>
@@ -175,7 +175,7 @@ export function EnquiryForm() {
             );
           })}
         </div>
-        {errors.support && <p className="mt-1.5 text-xs text-destructive">{errors.support}</p>}
+        {errors['support'] && <p className="mt-1.5 text-xs text-destructive">{errors['support']}</p>}
       </fieldset>
 
       <div>
