@@ -29,75 +29,43 @@ export function SiteHeader() {
         </a>
 
         <nav className="hidden items-center gap-6 lg:flex" aria-label="Main">
-          {NAV_LINKS.map((link) =>
-            link.href.startsWith("/") ? (
-              <Link
-                key={link.href}
-                to={link.href}
-                className="text-sm text-foreground/80 transition-colors hover:text-primary"
-              >
-                {link.label}
-              </Link>
-            ) : (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-sm text-foreground/80 transition-colors hover:text-primary"
-              >
-                {link.label}
-              </a>
-            )
-          )}
+          {NAV_LINKS.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-sm text-foreground/80 transition-colors hover:text-primary"
+            >
+              {link.label}
+            </a>
+          ))}
         </nav>
 
-        <div className="flex items-center gap-2">
-          <Button asChild variant="hero" size="lg" className="hidden rounded-full sm:inline-flex">
-            <Link to="/book-a-call">Book a Free Discovery Call</Link>
-          </Button>
-          <button
-            type="button"
-            onClick={() => setOpen((v) => !v)}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border text-primary lg:hidden"
-            aria-label={open ? "Close menu" : "Open menu"}
-            aria-expanded={open}
-          >
-            {open ? <X className="size-5" /> : <Menu className="size-5" />}
-          </button>
-        </div>
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border text-primary lg:hidden"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+        >
+          {open ? <X className="size-5" /> : <Menu className="size-5" />}
+        </button>
       </div>
 
       {open && (
         <nav className="border-t border-border bg-background px-4 pb-5 pt-3 lg:hidden" aria-label="Mobile">
           <ul className="space-y-1">
-            {NAV_LINKS.map((link) =>
-              link.href.startsWith("/") ? (
-                <li key={link.href}>
-                  <Link
-                    to={link.href}
-                    onClick={() => setOpen(false)}
-                    className="block rounded-lg px-3 py-2.5 text-sm text-foreground/85 hover:bg-secondary hover:text-primary"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ) : (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    onClick={() => setOpen(false)}
-                    className="block rounded-lg px-3 py-2.5 text-sm text-foreground/85 hover:bg-secondary hover:text-primary"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              )
-            )}
+            {NAV_LINKS.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="block rounded-lg px-3 py-2.5 text-sm text-foreground/85 hover:bg-secondary hover:text-primary"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
-          <Button asChild variant="hero" size="xl" className="mt-3 w-full">
-            <Link to="/book-a-call" onClick={() => setOpen(false)}>
-              Book a Free Discovery Call
-            </Link>
-          </Button>
         </nav>
       )}
     </header>

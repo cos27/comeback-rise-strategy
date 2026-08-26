@@ -9,7 +9,6 @@ const footerLinks = [
   { label: "COS Returnship Program\u2122", href: "#program" },
   { label: "Resources", href: "#resources" },
   { label: "Contact", href: "#contact" },
-  { label: "Book a Call", href: "/book-a-call" },
   { label: "Privacy Policy", href: "#privacy" },
   { label: "Terms & Conditions", href: "#terms" },
 ];
@@ -44,33 +43,17 @@ export function SiteFooter() {
             <Linkedin className="size-4" aria-hidden="true" />
             LinkedIn
           </a>
-          <div className="mt-6">
-            <Button asChild variant="hero" size="lg">
-              <Link to="/book-a-call">Book a Free Discovery Call</Link>
-            </Button>
-          </div>
         </div>
 
         <nav aria-label="Footer">
           <ul className="grid grid-cols-2 gap-x-6 gap-y-3 text-sm">
-            {footerLinks.map((link) =>
-              link.href.startsWith("/") ? (
-                <li key={link.label}>
-                  <Link
-                    to={link.href}
-                    className="text-muted-foreground hover:text-primary"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ) : (
-                <li key={link.label}>
-                  <a href={link.href} className="text-muted-foreground hover:text-primary">
-                    {link.label}
-                  </a>
-                </li>
-              )
-            )}
+            {footerLinks.map((link) => (
+              <li key={link.label}>
+                <a href={link.href} className="text-muted-foreground hover:text-primary">
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>
