@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
-  ArrowRight,
   BrainCircuit,
   Compass,
   FileText,
@@ -227,12 +226,10 @@ function Home() {
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Button asChild variant="hero" size="xl">
-                  <Link to="/book-a-call">
-                    Book a Free Discovery Call <ArrowRight aria-hidden="true" />
-                  </Link>
+                  <a href="#method">Explore COS</a>
                 </Button>
                 <Button asChild variant="outlinePlum" size="xl">
-                  <a href="#method">Explore COS</a>
+                  <a href="#contact">Get in Touch</a>
                 </Button>
               </div>
               <p className="mt-8 border-l-2 border-gold pl-4 font-display text-lg text-foreground/80 italic">
@@ -333,11 +330,6 @@ function Home() {
             ))}
           </div>
 
-          <div className="mt-10">
-            <Button asChild variant="hero" size="xl">
-              <Link to="/book-a-call">Book a Free Discovery Call</Link>
-            </Button>
-          </div>
         </section>
 
         {/* PROGRAM */}
@@ -367,11 +359,6 @@ function Home() {
               ))}
             </div>
 
-            <div className="mt-10">
-              <Button asChild variant="gold" size="xl">
-                <Link to="/book-a-call">Book a Free Discovery Call</Link>
-              </Button>
-            </div>
           </div>
         </section>
 
@@ -409,11 +396,6 @@ function Home() {
                   rebuilding confidence and professional identity to becoming AI-ready for
                   today&rsquo;s workplace.
                 </p>
-              </div>
-              <div className="mt-7">
-                <Button asChild variant="outlinePlum" size="xl">
-                  <a href="#contact">Meet the Founder</a>
-                </Button>
               </div>
             </div>
           </div>
@@ -524,10 +506,10 @@ function Home() {
             </p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
               <Button asChild variant="gold" size="xl">
-                <Link to="/book-a-call">Book a Free Discovery Call</Link>
+                <a href="#contact">Start Your Comeback</a>
               </Button>
               <Button asChild variant="outlineLight" size="xl">
-                <Link to="/book-a-call">Free Discovery Call</Link>
+                <a href="#method">Explore the Method</a>
               </Button>
             </div>
           </div>
