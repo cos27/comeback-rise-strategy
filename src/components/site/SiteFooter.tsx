@@ -1,8 +1,6 @@
 import { Linkedin } from "lucide-react";
-import { Link } from "@tanstack/react-router";
 
-import { Button } from "@/components/ui/button";
-import { LINKEDIN_URL, NAV_LINKS } from "@/lib/cos";
+import { LINKEDIN_URL } from "@/lib/cos";
 import logo from "@/assets/cos-logo.jpg.asset.json";
 
 const footerLinks = [

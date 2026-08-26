@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "@tanstack/react-router";
 
-import { Button } from "@/components/ui/button";
 import { NAV_LINKS } from "@/lib/cos";
 import logo from "@/assets/cos-logo.jpg.asset.json";
 
