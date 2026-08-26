@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   ArrowRight,
   BrainCircuit,
@@ -227,9 +227,9 @@ function Home() {
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Button asChild variant="hero" size="xl">
-                  <a href="#contact">
-                    Start Your Comeback <ArrowRight aria-hidden="true" />
-                  </a>
+                  <Link to="/book-a-call">
+                    Book a Free Discovery Call <ArrowRight aria-hidden="true" />
+                  </Link>
                 </Button>
                 <Button asChild variant="outlinePlum" size="xl">
                   <a href="#method">Explore COS</a>
@@ -335,7 +335,7 @@ function Home() {
 
           <div className="mt-10">
             <Button asChild variant="hero" size="xl">
-              <a href="#contact">Find the Right Support</a>
+              <Link to="/book-a-call">Book a Free Discovery Call</Link>
             </Button>
           </div>
         </section>
@@ -369,7 +369,7 @@ function Home() {
 
             <div className="mt-10">
               <Button asChild variant="gold" size="xl">
-                <a href="#contact">Start Your Comeback</a>
+                <Link to="/book-a-call">Book a Free Discovery Call</Link>
               </Button>
             </div>
           </div>
@@ -524,9 +524,11 @@ function Home() {
             </p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
               <Button asChild variant="gold" size="xl">
-                <a href="#contact">Start Your Comeback</a>
+                <Link to="/book-a-call">Book a Free Discovery Call</Link>
               </Button>
-              <WhatsAppCta variant="outlineLight" label="Free Discovery Call" />
+              <Button asChild variant="outlineLight" size="xl">
+                <Link to="/book-a-call">Free Discovery Call</Link>
+              </Button>
             </div>
           </div>
         </section>
