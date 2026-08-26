@@ -16,5 +16,4 @@ export const NAV_LINKS = [
   { label: "COS Returnship Program\u2122", href: "#program" },
   { label: "Resources", href: "#resources" },
   { label: "Contact", href: "#contact" },
-  { label: "Book a Call", href: "/book-a-call" },
 ];
