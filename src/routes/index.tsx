@@ -229,7 +229,7 @@ function Home() {
                   <a href="#method">Explore COS</a>
                 </Button>
                 <Button asChild variant="outlinePlum" size="xl">
-                  <a href="#contact">Get in Touch</a>
+                  <Link to="/book-a-call">Book a Free Discovery Call</Link>
                 </Button>
               </div>
               <p className="mt-8 border-l-2 border-gold pl-4 font-display text-lg text-foreground/80 italic">
@@ -506,7 +506,7 @@ function Home() {
             </p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
               <Button asChild variant="gold" size="xl">
-                <a href="#contact">Start Your Comeback</a>
+                <Link to="/book-a-call">Free Discovery Call</Link>
               </Button>
               <Button asChild variant="outlineLight" size="xl">
                 <a href="#method">Explore the Method</a>
