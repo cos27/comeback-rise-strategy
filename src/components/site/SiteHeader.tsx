@@ -14,16 +14,16 @@ export function SiteHeader() {
           <img
             src={logo.url}
             alt="Comeback Operating System (COS) logo"
-            className="h-11 w-11 rounded-full object-cover object-top lg:h-12 lg:w-12"
-            width={48}
+            className="h-11 w-auto object-contain lg:h-12"
+            width={120}
             height={48}
           />
           <span className="hidden leading-tight sm:block">
             <span className="block font-display text-lg font-semibold text-primary">
               Comeback Operating System&trade;
             </span>
-            <span className="block text-[0.7rem] tracking-[0.18em] text-muted-foreground uppercase">
-              Restart. Rebuild. Rise.
+            <span className="block text-[0.7rem] tracking-[0.12em] text-muted-foreground">
+              Empowering Women to Restart, Rebuild and Rise — Your Career Comeback Partner
             </span>
           </span>
         </a>
