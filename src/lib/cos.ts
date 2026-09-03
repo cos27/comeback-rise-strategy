@@ -17,3 +17,6 @@ export const NAV_LINKS = [
   { label: "Resources", href: "#resources" },
   { label: "Contact", href: "#contact" },
 ];
+
+// Tally form for booking a free career consultation.
+export const CONSULTATION_FORM_URL = "https://tally.so/r/gDovAD";
