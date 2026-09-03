@@ -503,8 +503,11 @@ function Home() {
             </p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
               <Button asChild variant="gold" size="xl">
-                <Link to="/book-a-call">Book a Free Career Consultation</Link>
+                <a href={CONSULTATION_FORM_URL} target="_blank" rel="noopener noreferrer">
+                  Book a Free Career Consultation
+                </a>
               </Button>
+
             </div>
           </div>
         </section>
