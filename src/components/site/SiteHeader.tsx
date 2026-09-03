@@ -14,9 +14,9 @@ export function SiteHeader() {
           <img
             src={logo.url}
             alt="Comeback Operating System (COS) logo"
-            className="h-11 w-auto object-contain lg:h-12"
-            width={120}
-            height={48}
+            className="h-12 w-auto object-contain lg:h-14"
+            width={140}
+            height={56}
           />
           <span className="hidden leading-tight sm:block">
             <span className="block font-display text-lg font-semibold text-primary">
