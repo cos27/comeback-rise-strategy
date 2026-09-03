@@ -20,7 +20,12 @@ export function WhatsAppCta({
   const external = href.startsWith("http");
 
   return (
-    <Button asChild variant={variant} size={size} className={className}>
+    <Button
+      asChild
+      variant={variant ?? "default"}
+      size={size}
+      className={className}
+    >
       <a
         href={href}
         {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
