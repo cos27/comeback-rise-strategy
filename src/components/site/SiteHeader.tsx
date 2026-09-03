@@ -22,9 +22,6 @@ export function SiteHeader() {
             <span className="block font-display text-lg font-semibold text-primary">
               Comeback Operating System&trade;
             </span>
-            <span className="block text-[0.7rem] tracking-[0.12em] text-muted-foreground">
-              Empowering Women to Restart, Rebuild and Rise — Your Career Comeback Partner
-            </span>
           </span>
         </a>
 

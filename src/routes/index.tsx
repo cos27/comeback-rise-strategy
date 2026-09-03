@@ -228,9 +228,6 @@ function Home() {
                 <Button asChild variant="hero" size="xl">
                   <a href="#method">Explore COS</a>
                 </Button>
-                <Button asChild variant="outlinePlum" size="xl">
-                  <Link to="/book-a-call">Book a Free Career Consultation</Link>
-                </Button>
               </div>
               <p className="mt-8 border-l-2 border-gold pl-4 font-display text-lg text-foreground/80 italic">
                 &ldquo;No woman should give up her career because she took a break.&rdquo;
@@ -506,10 +503,7 @@ function Home() {
             </p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
               <Button asChild variant="gold" size="xl">
-                <Link to="/book-a-call">Free Discovery Call</Link>
-              </Button>
-              <Button asChild variant="outlineLight" size="xl">
-                <a href="#method">Explore the Method</a>
+                <Link to="/book-a-call">Book a Free Career Consultation</Link>
               </Button>
             </div>
           </div>

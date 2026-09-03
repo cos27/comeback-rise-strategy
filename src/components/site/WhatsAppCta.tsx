@@ -11,16 +11,21 @@ type Props = {
 };
 
 export function WhatsAppCta({
-  variant = "outlinePlum",
+  variant,
   size = "xl",
-  className,
+  className = "bg-[#25D366] text-white hover:bg-[#1ebe5b]",
   label = "Join the Community",
 }: Props) {
   const href = whatsappHref();
   const external = href.startsWith("http");
 
   return (
-    <Button asChild variant={variant} size={size} className={className}>
+    <Button
+      asChild
+      variant={variant ?? "default"}
+      size={size}
+      className={className}
+    >
       <a
         href={href}
         {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
