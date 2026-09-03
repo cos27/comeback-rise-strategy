@@ -11,9 +11,9 @@ type Props = {
 };
 
 export function WhatsAppCta({
-  variant = "outlinePlum",
+  variant,
   size = "xl",
-  className,
+  className = "bg-[#25D366] text-white hover:bg-[#1ebe5b]",
   label = "Join the Community",
 }: Props) {
   const href = whatsappHref();
