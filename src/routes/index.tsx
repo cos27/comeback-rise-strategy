@@ -22,6 +22,7 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { EnquiryForm } from "@/components/site/EnquiryForm";
 import { WhatsAppCta } from "@/components/site/WhatsAppCta";
+import { CONSULTATION_FORM_URL } from "@/lib/cos";
 import heroImage from "@/assets/aanchal-founder.jpg.asset.json";
 import founderImage from "@/assets/aanchal-desk.jpg.asset.json";
 
@@ -503,8 +504,11 @@ function Home() {
             </p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
               <Button asChild variant="gold" size="xl">
-                <Link to="/book-a-call">Book a Free Career Consultation</Link>
+                <a href={CONSULTATION_FORM_URL} target="_blank" rel="noopener noreferrer">
+                  Book a Free Career Consultation
+                </a>
               </Button>
+
             </div>
           </div>
         </section>
