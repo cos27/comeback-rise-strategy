@@ -229,7 +229,7 @@ function Home() {
                   <a href="#method">Explore COS</a>
                 </Button>
                 <Button asChild variant="outlinePlum" size="xl">
-                  <Link to="/book-a-call">Book a Free Discovery Call</Link>
+                  <Link to="/book-a-call">Book a Free Career Consultation</Link>
                 </Button>
               </div>
               <p className="mt-8 border-l-2 border-gold pl-4 font-display text-lg text-foreground/80 italic">
